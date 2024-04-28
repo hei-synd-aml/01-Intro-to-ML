@@ -1,12 +1,13 @@
 # 01_Intro_to_ML
 In this classe you will:
-- Get a refresh about python basics
-- Learn how to use two powerful packages for data science: NumPy and Pandas
-- Create your first ML programs from scratch
-- Getting started with Expoloratory Data Analyis
+- Get used to work with notebooks (i.e., Jupyterlab)
+- Get a refresher about python basics
+- Learn how to use two powerful python packages for data science: NumPy and Pandas
+- Create your first ML algorithm from scratch: K-means
 
 ## Prequisites
-Python > 3.10 installed on your machine 
+[git](https://git-scm.com/downloads) installed on your computer
+[Python > 3.10](https://www.python.org/downloads/) installed on your computer 
 
 ## Installation of this project (only the first time)
 1. Copy or Clone this project
@@ -18,17 +19,17 @@ py -m venv venv_AML
 
 Windows:
 ```
-.\venv_AML\Scripts\activate
+..\..\venv_AML\Scripts\activate
 ```
-Mac:
+Mac (to be tested):
 ```
-source venv_AML/bin/activate
+source ../../venv_AML/bin/activate
 ```
-4. Tu use the virtual env in jupyter lab you need to install (if not in requirements.txt):
+4. To use the virtual env in jupyter lab you need to install (if not in requirements.txt):
 ```
 pip install ipykernel
 ```
-5. Now, before running Jupyterlab, we want to introduce our virtual environment to jupyterlab so that we can use it(*remember* to use this command inside of virtual environment)
+5. Now, before running Jupyterlab, we want to introduce our virtual environment to jupyterlab so that we can use it (*remember* to use this command inside of the virtual environment)
 
 ```
 python -m ipykernel install --user --name=venv_AML
