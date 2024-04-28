@@ -6,12 +6,12 @@ In this classe you will:
 - Create your first ML algorithm from scratch: K-means
 
 ## Prequisites
-[git](https://git-scm.com/downloads) installed on your computer
-[Python > 3.10](https://www.python.org/downloads/) installed on your computer 
+* [git](https://git-scm.com/downloads) installed on your computer
+* [Python > 3.10](https://www.python.org/downloads/) installed on your computer 
 
 ## Installation of this project (only the first time)
 1. Copy or Clone this project
-2. [Optional] Create a virtual environment (e.g., called `venv_AML`)
+2. [Optional] Create a virtual environment (e.g., called `venv_AML`). Create or select a folder where the dependencies will be installed. Using a terminal, use the following commands:
 ```
 py -m venv venv_AML
 ```
@@ -35,7 +35,7 @@ pip install ipykernel
 python -m ipykernel install --user --name=venv_AML
 ```
 
-6. Update pip and install the requirements (if any)
+6. Update pip and install the requirements (if any). Otherwise, you can skip this step and install packages when needed
 ```
 python -m pip install --upgrade pip
 pip install -r requirements.txt
