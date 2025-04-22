@@ -6,7 +6,7 @@ In this lab you will:
 - Create your first ML algorithm from scratch: K-means
 
 ## Prequisites
-* You read or followed the instructions to run and test Poetry in the [previous lab](https://github.com/hei-synd-aml/lab-0-TutoPoetry).
+* You read/followed the instructions to run and test Poetry in the [previous lab](https://github.com/hei-synd-aml/lab-0-TutoPoetry).
 
 ## Installation of the project
 1. If not done yet, clone this project in your *your_AML_main_folder*
