@@ -1,26 +1,13 @@
 [project]
-name = "Lab01"
+name = "01-intro-to-ml"
 version = "0.1.0"
-description = ""
-authors = [
-    {name = "carrinodue",email = "francesco.carrino@hes-so.ch"}
-]
-readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.13"
 dependencies = [
-    "numpy (>=2.2.2,<3.0.0)",
-    "pandas (>=2.2.3,<3.0.0)",
-    "matplotlib (>=3.10.0,<4.0.0)",
-    "scikit-learn (>=1.6.1,<2.0.0)",
-    "seaborn (>=0.13.2,<0.14.0)",
-    "ipykernel (>=6.29.5,<7.0.0)",
-    "notebook (>=7.3.2,<8.0.0)"
+    "ipykernel>=7.2.0",
+    "matplotlib>=3.10.8",
+    "notebook>=7.5.5",
+    "numpy>=2.4.3",
+    "pandas>=3.0.1",
+    "scikit-learn>=1.8.0",
+    "seaborn>=0.13.2",
 ]
-
-
-[build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
-
-[tool.poetry]
-package-mode = false
