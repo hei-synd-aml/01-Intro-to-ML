@@ -5,26 +5,60 @@ In this lab you will:
 - Learn how to use two powerful python packages for data science: NumPy and Pandas
 - Create your first ML algorithm from scratch: K-means
 
-## Prequisites
-* You read/followed the instructions to run and test Poetry in the [previous lab](https://github.com/hei-synd-aml/lab-0-TutoPoetry).
 
-## Installation of the project
-1. If not done yet, clone this project in your *your_AML_main_folder*
+## Installation and Setup of the working environment (only the first time, the first lab)
+You have two options to setup your working environment:
+
+1. **Option 1 (recommended)**: Use the provided `pyproject.toml` file to create a virtual environment with all the dependencies needed for this lab. Follow our tutorial [here](https://github.com/hei-synd-aml/lab-0-TutoUv) or follow the instructions provided in the official [uv documentation](https://docs.astral.sh/uv/guides/projects/#running-commands).
+2. **Option 2**: Create a virtual environment and install the dependencies manually. *See the instructions below*.
+
+### Option 2 (NOT recommended): Create a virtual environment and install the dependencies manually
+Here we will create a virtual environment (e.g., called `venv_AML`) that you will use for all your labs on this course. 
+
+1. Create or select a folder where the dependencies will be installed. We suggest that you select a folder above all of your (future) labs folders.  
 ```
-git clone <url of the project to clone>
++----your_AML_main_folder
+|     +---venv_AML
+|     +---lab_01
+|     +---lab_02
+...   ...
 ```
 
-2. Open a terminal in the project folder and create a new virtual environment using poetry or reuse the environment created in the previous lab. If you want to create a new one, type:
+2. Using a terminal, use the following commands to create your virtual environment:
+```
+py -m venv venv_AML
+```
+3. Activate the virtual environment
+
+Windows:
+```
+.\venv_AML\Scripts\activate
+```
+Mac:
+```
+source ./venv_AML/bin/activate
+```
+4. To use the virtual env., update pip and install the following modules:
+```
+python -m pip install --upgrade pip
+pip install ipykernel
+pip install jupyter
+```
+
+5. [Optional] Other modules that you may want to install now are:
+```bash
+pip install ipykernel
+pip install -U scikit-learn
+pip install numpy
+pip install pandas
+pip install matplotlib
+pip install jupyter-black
+```
+
+6. Now, you can use this virtual environment in your project on your preferred IDE (VS Code, Pycharm, etc.). Before doing so, we need to introduce our virtual environment to jupyter so that we can use it. *Remember* to use this command inside of the virtual environment, after activating it. Some IDEs will automatically manage this task for you. If not execute: 
 
 ```
-poetry install
+python -m ipykernel install --user --name=venv_AML
 ```
 
-*NOTE: It is a good practice to create a new virtual environment for each project. This way you can manage the dependencies of each project separately. However, in this course we will mostly use the same dependencies all the time, so you can reuse the same virtual environment for all the labs. Environment takes some space, so if you are running out of space, you can delete the virtual environment of the previous lab and create a new one for this lab. At the end, it is up to you.*
-
-
-3. Open this project on your favorite IDE (Visual Studio Code, Pycharm, etc.). Once loaded, be sure to use the interpreter in the virtual environment created above. See the instructions of your IDE.
-
-4. Open the first notebook of the lab: `00. Python refresher.ipynb` and follow the instructions.
-
-5. Enjoy
+Your working environment is ready!
